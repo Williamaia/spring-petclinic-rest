@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.springframework.samples.petclinic.model.Owner" project="spring-petclinic-rest" 
+    file="/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/model/Owner.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="322" width="198" x="31" y="33"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl" 
+    project="spring-petclinic-rest" 
+    file="/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcOwnerRepositoryImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="604" y="161"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.springframework.samples.petclinic.rest.JacksonCustomOwnerDeserializer" 
+    project="spring-petclinic-rest" 
+    file="/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/rest/JacksonCustomOwnerDeserializer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="233" x="278" y="425"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="org.springframework.samples.petclinic.rest.JacksonCustomOwnerSerializer" 
+    project="spring-petclinic-rest" 
+    file="/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/rest/JacksonCustomOwnerSerializer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="227" x="30" y="426"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="org.springframework.samples.petclinic.rest.OwnerRestController" 
+    project="spring-petclinic-rest" 
+    file="/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/rest/OwnerRestController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="170" width="231" x="554" y="373"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
