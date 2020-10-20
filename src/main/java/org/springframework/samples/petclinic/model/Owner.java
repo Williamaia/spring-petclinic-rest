@@ -68,6 +68,9 @@ public class Owner extends Person {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner", fetch = FetchType.EAGER)
     private Set<Pet> pets;
+    
+    @Column(name= "ativo")
+    private boolean ativo;
 
 
     public String getAddress() {
@@ -104,7 +107,15 @@ public class Owner extends Person {
     protected void setPetsInternal(Set<Pet> pets) {
         this.pets = pets;
     }
-
+    
+    public Boolean isAtivo() {
+        return this.ativo;
+    }
+    
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
+    }
+    
     public List<Pet> getPets() {
         List<Pet> sortedPets = new ArrayList<>(getPetsInternal());
         PropertyComparator.sort(sortedPets, new MutableSortDefinition("name", true, true));
@@ -157,6 +168,7 @@ public class Owner extends Person {
             .append("address", this.address)
             .append("city", this.city)
             .append("telephone", this.telephone)
+            .append("ativo", this.ativo)
             .toString();
     }
 }
